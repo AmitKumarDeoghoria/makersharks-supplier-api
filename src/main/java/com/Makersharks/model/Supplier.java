@@ -1,6 +1,5 @@
 // Supplier.java
 package com.Makersharks.model;
-import com.Makersharks.validation.UniqueSupplierId;
 import com.Makersharks.validation.ValidManufacturingProcesses;
 import com.Makersharks.validation.ValidNatureOfBusiness;
 import jakarta.persistence.Entity;
