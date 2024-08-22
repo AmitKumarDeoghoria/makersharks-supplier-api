@@ -99,7 +99,7 @@ mvn spring-boot:run
       "companyName": "Example Company",
       "website": "http://www.example.com",
       "location": "NEW_YORK",
-      "natureOfBusiness": "MEDIUM_SCALE",
+      "natureOfBusiness": "medium_scale",
       "manufacturingProcesses": "Moulding"
     }
     ```
@@ -126,8 +126,8 @@ curl -X POST http://localhost:8080/suppliers/add \
 -d '{
   "companyName": "Example Company",
   "website": "http://www.example.com",
-  "location": "NEW_YORK",
-  "natureOfBusiness": "MEDIUM_SCALE",
+  "location": "INDIA",
+  "natureOfBusiness": "medium_scale",
   "manufacturingProcesses": "Moulding"
 }'
 ```
