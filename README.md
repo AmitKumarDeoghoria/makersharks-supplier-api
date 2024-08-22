@@ -56,8 +56,8 @@ Ensure you have the following installed on your machine:
 1. **Clone the Repository**:
 
     ```bash
-    git clone https://github.com/yourusername/supplier-management-api.git
-    cd supplier-management-api
+    git clone [https://github.com/your-user-name/makersharks-supplier-api.git]
+    cd makersharks-supplier-api
     ```
 
 2. **Build the Project**:
@@ -86,3 +86,63 @@ For **Maven**:
 
 ```bash
 mvn spring-boot:run
+```
+
+## API Endpoints
+
+### Adding a Supplier
+
+- **Endpoint**: `POST /suppliers/add`
+- **Description**: Add a new supplier to the system.
+- **Request Body**:
+
+    ```json
+    {
+      "companyName": "Example Company",
+      "website": "http://www.example.com",
+      "location": "NEW_YORK",
+      "natureOfBusiness": "MEDIUM_SCALE",
+      "manufacturingProcesses": "Moulding"
+    }
+    ```
+
+### Querying Suppliers
+
+- **Endpoint**: `POST /suppliers/query`
+- **Description**: Retrieve suppliers filtered by location, nature of business, and manufacturing processes.
+- **Query Parameters**:
+  - `location`: Allowed values: `NEW_YORK`, `LOS_ANGELES`, `CHICAGO`, `HOUSTON`, `MIAMI`
+  - `natureOfBusiness`: Allowed values: `SMALL_SCALE`, `MEDIUM_SCALE`, `LARGE_SCALE`
+  - `manufacturingProcesses`: Allowed values: `Moulding`, `3D_PRINTING`, `CNC_MACHINE`, `HAND_ASSEMBLY`
+
+### Retrieving Supplier by ID
+
+- **Endpoint**: `GET /suppliers/{id}`
+- **Description**: Retrieve a supplier by their ID.
+- **Response**: Returns the supplier details or a 404 status if not found.
+
+### Deleting a Supplier
+
+- **Endpoint**: `DELETE /suppliers/{id}`
+- **Description**: Remove a supplier by their ID.
+- **Response**: Returns a 204 status on success or a 404 status if not found.
+
+## Request and Response Examples
+
+### Example Request
+
+Using CURL to add a supplier:
+
+```bash
+curl -X POST http://localhost:8080/suppliers/add \
+-H "Content-Type: application/json" \
+-d '{
+  "companyName": "Example Company",
+  "website": "http://www.example.com",
+  "location": "NEW_YORK",
+  "natureOfBusiness": "MEDIUM_SCALE",
+  "manufacturingProcesses": "Moulding"
+}'
+
+
+
