@@ -1,19 +1,30 @@
 // Supplier.java
 package com.Makersharks.model;
+import com.Makersharks.validation.UniqueSupplierId;
+import com.Makersharks.validation.ValidManufacturingProcesses;
+import com.Makersharks.validation.ValidNatureOfBusiness;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.Size;
 
 @Entity
 public class Supplier {
     @Id
     @GeneratedValue(strategy=GenerationType.AUTO)
+
     private Long supplierId;
+    @NotBlank(message = "Company name cannot be empty")
     private String companyName;
+    @Size(max = 255, message = "Website URL can't be longer than 255 characters")
     private String website;
+    @NotBlank(message = "location name cannot be empty")
     private String location;
+    @ValidNatureOfBusiness
     private String natureOfBusiness; // small_scale, medium_scale, large_scale
+    @ValidManufacturingProcesses
     private String manufacturingProcesses; // moulding, 3d_printing, casting, coating
 
     // Getters and Setters
