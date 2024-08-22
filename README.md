@@ -75,6 +75,17 @@ Ensure you have the following installed on your machine:
 3. **Configure the Database**:
 
     Ensure your application can connect to a database (e.g., H2, MySQL, PostgreSQL) by updating the `application.yml` or `application.properties` with your database connection details.
+ MYSQL application.properties:
+Enter ur database name , username and password in the fields.
+
+MYSQL application.properties:
+
+spring.jpa.hibernate.ddl-auto=update
+spring.datasource.url=jdbc:mysql://localhost:3306/mydatabase
+spring.datasource.username=myuser
+spring.datasource.password=secret
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+spring.jpa.show-sql: true
 
 ### Running the Application
 
