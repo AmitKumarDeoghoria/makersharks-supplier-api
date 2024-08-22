@@ -139,7 +139,7 @@ curl -X POST http://localhost:8080/suppliers/add \
   "website": "http://www.example.com",
   "location": "INDIA",
   "natureOfBusiness": "medium_scale",
-  "manufacturingProcesses": "Moulding"
+  "manufacturingProcesses": "moulding"
 }'
 ```
 ### Example Response
@@ -153,7 +153,7 @@ On successful addition, you will receive a response like:
   "website": "http://www.example.com",
   "location": "INDIA",
   "natureOfBusiness": "medium_scale",
-  "manufacturingProcesses": "Moulding"
+  "manufacturingProcesses": "moulding"
 }
 ```
 ## Swagger UI Documentation
