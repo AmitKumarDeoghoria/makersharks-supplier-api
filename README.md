@@ -130,6 +130,45 @@ curl -X POST http://localhost:8080/suppliers/add \
   "natureOfBusiness": "MEDIUM_SCALE",
   "manufacturingProcesses": "Moulding"
 }'
+```
+### Example Response
 
+On successful addition, you will receive a response like:
 
+```json
+{
+  "supplierId": 1,
+  "companyName": "Example Company",
+  "website": "http://www.example.com",
+  "location": "NEW_YORK",
+  "natureOfBusiness": "MEDIUM_SCALE",
+  "manufacturingProcesses": "Moulding"
+}
+```
+## Swagger UI Documentation
+You can view and interact with the API documentation through Swagger UI. To access the Swagger documentation, open your browser and navigate to:http://localhost:8080/swagger-ui.html
+### How to Use Swagger UI
+
+1. **Access the UI**: Open the above URL in your web browser.
+2. **Explore API Endpoints**: 
+   - The Swagger UI will display a list of all available API endpoints.
+   - Each endpoint will show the HTTP method, endpoint URL, and a brief description.
+3. **Try It Out**: 
+   - Click on any endpoint to expand it.
+   - You can view details such as request parameters, request body, and response types.
+   - Use the "Try it out" button to send requests directly from the UI. Enter required input in the fields and hit the button to execute the request.
+4. **View Responses**: 
+   - After making a request, Swagger will display the server's response including the status code, response body, and any message returned.
+
+### Benefits of Using Swagger UI
+
+- **Interactive Documentation**: Provides a user-friendly interface for exploring and testing the API without needing additional tools (like Postman).
+- **Immediate Feedback**: Developers can quickly test endpoints and see live responses, which aids in debugging and development.
+- **Clear Structure**: Clearly organized documentation helps users understand the API’s capabilities and how to interact with it more effectively.
+
+### Example Swagger UI Interface
+
+![Swagger UI Screenshot](https://example.com/screenshot.png)
+
+*Note: Replace the above link with an actual screenshot of your Swagger UI if available.*
 
