@@ -17,4 +17,10 @@ public class SupplierService {
     public List<Supplier> searchSuppliers(String location, String natureOfBusiness, String manufacturingProcesses) {
         return supplierRepository.findByLocationAndNatureOfBusinessAndManufacturingProcesses(location, natureOfBusiness, manufacturingProcesses);
     }
+    public boolean existsById(Long supplierId) {
+        return supplierRepository.existsById(supplierId);
+    }
+    public Supplier addSupplier(Supplier supplier) {
+        return supplierRepository.save(supplier);
+    }
 }
