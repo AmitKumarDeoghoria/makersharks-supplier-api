@@ -111,7 +111,7 @@ mvn spring-boot:run
       "website": "http://www.example.com",
       "location": "NEW_YORK",
       "natureOfBusiness": "medium_scale",
-      "manufacturingProcesses": "Moulding"
+      "manufacturingProcesses": "moulding"
     }
     ```
 
@@ -122,7 +122,7 @@ mvn spring-boot:run
 - **Query Parameters**:
   - `location`: Allowed values: ANY(ALREADY IN DB:`NEW_YORK`, `LOS_ANGELES`, `CHICAGO`, `HOUSTON`, `MIAMI`)
   - `natureOfBusiness`: Allowed values: `small_scale`, `medium_scale`, `large_scale`
-  - `manufacturingProcesses`: Allowed values: `Moulding`, `3D_printing`, `Coating`,`Casting`
+  - `manufacturingProcesses`: Allowed values: `moulding`, `3D_printing`, `coating`,`casting`
 
 
 ## Request and Response Examples
