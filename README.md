@@ -32,8 +32,8 @@ The Supplier Management API is a Spring Boot application designed for managing s
 
 ## Technology Stack
 
-- **Java 17**
-- **Spring Boot 2.x**
+- **Java 22**
+- **Spring Boot 3.x**
 - **Spring Data JPA**
 - **Hibernate**
 - **Swagger/OpenAPI**
@@ -45,7 +45,7 @@ The Supplier Management API is a Spring Boot application designed for managing s
 
 Ensure you have the following installed on your machine:
 
-- Java 17 or higher
+- Java 22
 - Maven or Gradle (as a build tool)
 - An IDE (like IntelliJ IDEA or Eclipse) for development (optional)
 
