@@ -20,7 +20,7 @@ The Supplier Management API is a Spring Boot application designed for managing s
 - [Exception Handling](#exception-handling)
 - [Service Layer](#service-layer)
 - [Contributing](#contributing)
-- [License](#license)
+
 
 ## Features
 
@@ -165,10 +165,26 @@ You can view and interact with the API documentation through Swagger UI. To acce
 - **Interactive Documentation**: Provides a user-friendly interface for exploring and testing the API without needing additional tools (like Postman).
 - **Immediate Feedback**: Developers can quickly test endpoints and see live responses, which aids in debugging and development.
 - **Clear Structure**: Clearly organized documentation helps users understand the API’s capabilities and how to interact with it more effectively.
+- 
+## Exception Handling
+The application incorporates a centralized approach for managing exceptions:
 
-### Example Swagger UI Interface
+Error Responses: When an error occurs, the API returns structured JSON responses with appropriate HTTP status codes.
+Custom Exception Classes: You can create specific exception classes to handle different error scenarios for clarity and maintainability.
 
-![Swagger UI Screenshot](https://example.com/screenshot.png)
+## Service Layer
+The service layer encapsulates the business logic of the application:
 
-*Note: Replace the above link with an actual screenshot of your Swagger UI if available.*
+SupplierService: Manages operations related to suppliers, including adding, fetching, and deleting suppliers.
+Validation Logic: Validates incoming data to ensure compliance with required formats and business rules.
+Example Service Method
+
+## Contributing
+Contributions are welcome! If you'd like to contribute:
+
+Fork the repository.
+Create a new branch (git checkout -b feature-branch).
+Make your changes and commit them (git commit -m 'Add some feature').
+Push to the branch (git push origin feature-branch).
+Create a Pull Request outlining your changes.
 
