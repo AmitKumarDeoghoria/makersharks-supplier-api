@@ -15,8 +15,6 @@ The Supplier Management API is a Spring Boot application designed for managing s
 - [API Endpoints](#api-endpoints)
     - [Adding a Supplier](#adding-a-supplier)
     - [Querying Suppliers](#querying-suppliers)
-    - [Retrieving Supplier by ID](#retrieving-supplier-by-id)
-    - [Deleting a Supplier](#deleting-a-supplier)
 - [Request and Response Examples](#request-and-response-examples)
 - [Swagger UI Documentation](#swagger-ui-documentation)
 - [Exception Handling](#exception-handling)
@@ -108,24 +106,13 @@ mvn spring-boot:run
 
 ### Querying Suppliers
 
-- **Endpoint**: `POST /suppliers/query`
+- **Endpoint**: `POST /api/supplier/query`
 - **Description**: Retrieve suppliers filtered by location, nature of business, and manufacturing processes.
 - **Query Parameters**:
-  - `location`: Allowed values: `NEW_YORK`, `LOS_ANGELES`, `CHICAGO`, `HOUSTON`, `MIAMI`
-  - `natureOfBusiness`: Allowed values: `SMALL_SCALE`, `MEDIUM_SCALE`, `LARGE_SCALE`
-  - `manufacturingProcesses`: Allowed values: `Moulding`, `3D_PRINTING`, `CNC_MACHINE`, `HAND_ASSEMBLY`
+  - `location`: Allowed values: ANY(ALREADY IN DB:`NEW_YORK`, `LOS_ANGELES`, `CHICAGO`, `HOUSTON`, `MIAMI`)
+  - `natureOfBusiness`: Allowed values: `small_scale`, `medium_scale`, `large_scale`
+  - `manufacturingProcesses`: Allowed values: `Moulding`, `3D_printing`, `Coating`,`Casting`
 
-### Retrieving Supplier by ID
-
-- **Endpoint**: `GET /suppliers/{id}`
-- **Description**: Retrieve a supplier by their ID.
-- **Response**: Returns the supplier details or a 404 status if not found.
-
-### Deleting a Supplier
-
-- **Endpoint**: `DELETE /suppliers/{id}`
-- **Description**: Remove a supplier by their ID.
-- **Response**: Returns a 204 status on success or a 404 status if not found.
 
 ## Request and Response Examples
 
