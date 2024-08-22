@@ -151,8 +151,8 @@ On successful addition, you will receive a response like:
   "supplierId": 1,
   "companyName": "Example Company",
   "website": "http://www.example.com",
-  "location": "NEW_YORK",
-  "natureOfBusiness": "MEDIUM_SCALE",
+  "location": "INDIA",
+  "natureOfBusiness": "medium_scale",
   "manufacturingProcesses": "Moulding"
 }
 ```
